@@ -51,31 +51,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `isschecker` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install isschecker
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install isschecker
 ```
 
-It is possible to list all of the versions of `isschecker` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add isschecker
+# for installing globally
+pixi global install isschecker
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `isschecker` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search isschecker --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search isschecker --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search isschecker --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -87,6 +129,8 @@ mamba repoquery whoneeds isschecker --channel conda-forge
 # List dependencies of `isschecker`:
 mamba repoquery depends isschecker --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
