@@ -25,8 +25,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=77
     - pip
+    - setuptools >=77
   run:
     - python >=${{ python_min }},<3.15
     - numpy >=2.1,<3
