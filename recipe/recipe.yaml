@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: isschecker
-  version: "0.1.1"
+  version: "0.2.0"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/ismip/ISM_SimulationChecker/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0b76e27e774323703e5001d5a3d5b37abb32c821923109eecdf7f2f7544d799c
+  sha256: 7e2a5cee69681396621b3481c3204466cf93ebad8776be1e7430c79c5ab926ab
 
 build:
   number: 0
@@ -25,8 +25,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=77
     - pip
+    - setuptools >=77
   run:
     - python >=${{ python_min }},<3.15
     - numpy >=2.1,<3
