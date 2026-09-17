@@ -33,6 +33,7 @@ requirements:
     - xarray >=2025.1.2,<2027
     - cftime >=1.6.4,<2
     - netcdf4 >=1.7,<2
+    - cf-units >=3.3,<4
     - tqdm >=4.66
 
 tests:
